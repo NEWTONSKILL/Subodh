@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Container Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: hsl(201, 100%, 35%);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.nav-logo {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Toggle Button (Hamburger Icon) */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  background-color: white;
+  height: 2px;
+  width: 25px;
+  margin: 4px 0;
+  transition: all 0.3s;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0077b5;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  .nav-item {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-toggle.active + .nav-menu {
+    display: flex;
+  }
+}
+
+/* Section Styling */
+section {
+  background: white;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+}
+/* Footer Styling */
+.footer {
+  background-color: hsl(201, 100%, 35%);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-link img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.social-link:hover img {
+  transform: scale(1.1);
+}
+
+/* Footer Text */
+.footer-content p {
+  color: #fff;
+  font-size: 0.9em;
+}
+
+/* Responsive Footer Styling */
+@media (max-width: 600px) {
+  .footer-content p {
+    font-size: 0.8em;
+  }
+
+  .social-link img {
+    width: 35px;
+    height: 35px;
+  }
+}
