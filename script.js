@@ -1,8 +1,13 @@
-// Toggle navigation menu on mobile
-Document.addEventListen('DOMContentLoaded' , () => {
-const toggleButton = document.querySelector('.nav-toggle');
-const navMenu = document.querySelector('.nav-menu');
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.toggle-button');
+    const navMenu = document.querySelector('.nav-menu');
 
-toggleButton.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
+    if (toggleButton && navMenu) {
+        toggleButton.addEventListener('click', () => {
+            console.log('toggle button clicked');
+            navMenu.classList.toggle('active');
+        });
+    } else {
+        console.warn('toggle button or navigator menu not found.');
+    }
 });
