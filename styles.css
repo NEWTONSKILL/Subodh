@@ -41,7 +41,13 @@ body {
 .nav-menu {
   display: flex;
   list-style-type: none;
+
 }
+.nav-menu i{
+  color: #fff;
+
+}
+
 
 .nav-item {
   margin-left: 20px;
@@ -85,6 +91,7 @@ body {
     position: absolute;
     top: 50px;
     left: 0;
+    
   }
 
   .nav-item {
@@ -141,11 +148,14 @@ section {
   transform: scale(1.1);
 }
 
+
+
 /* Footer Text */
 .footer-content p {
   color: #fff;
   font-size: 0.9em;
 }
+
 
 /* Responsive Footer Styling */
 @media (max-width: 600px) {
@@ -153,7 +163,13 @@ section {
     font-size: 0.8em;
   }
 
-  
+  .social-link img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
 /* Gallery Section Styling */
 .gallery-section {
   padding: 20px;
@@ -188,10 +204,3 @@ section {
 }
 
 
-
-
-  .social-link img {
-    width: 35px;
-    height: 35px;
-  }
-}
