@@ -153,6 +153,43 @@ section {
     font-size: 0.8em;
   }
 
+  
+/* Gallery Section Styling */
+.gallery-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.swiper-container {
+  width: 80%;
+  margin: auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Customize Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+}
+
+.swiper-pagination-bullet {
+  background: #000 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff5722 !important;
+}
+
+
+
+
   .social-link img {
     width: 35px;
     height: 35px;
